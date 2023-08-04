@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400&family=Permanent+Marker&family=Poppins:wght@600&family=Roboto:wght@400;500&family=Titillium+Web:wght@400;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&family=Vina+Sans&display=swap" rel="stylesheet">
+    <script type="module" src="log.js"> </script>
+</head>
+<body>
+
+  
+  <div class="container-2" id="container-2" >
+    <div class="container-loading">
+
+      <h2>Your Goal</h2>
+      <div class="bar" id="bar">
+        <div class="fill" id="fill"></div>
+      </div>
+      <div class="counter" id="counter">0%</div>
+    </div>
+    <h1 id="header">
+      Daily Expense Tracker
+    </h1>
+    <div class="date">
+      <input required type="number" placeholder="Day of month" id="day">
+      <select required name="month" id="month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+        
+      </select>
+    </div>
+    <input required type="number" placeholder="expenses" id="expenses">
+        <textarea required class="extra-information" id="extra-information" rows="10" placeholder="What did you spent money on?"></textarea>
+    
+      
+    <button type="submit" id="create" class="button-data">Create</button>
+    <button id="settings" class="settings"><i class="fa-solid fa-gear"></i></button>
+    
+    <p></p>
+      
+      <div id="days-tracking">
+        <!--Days you have been tracking-->
+      </div>
+      <div id="spendings">
+
+      </div>
+      <div id="settings-div" class="settings-div">
+        <p id="close-s"><i class="fa-sharp fa-solid fa-xmark"></i></p>
+        <h2><i class="fa-solid fa-gears"></i> <br>Settings</h2>
+        <input type="text" placeholder="Daily Goal:" id="goal" class="goal">
+        <input type="number" placeholder="Saving Goal:" class="goal" id="saving-goal">
+        <input type="number" placeholder="Monthly income:" class="goal" id="monthincome">
+        <div id="dailysaving"></div>
+        <div class="currency">
+                
+            <h4>Your currency of choice</h3>
+          <select id="currency-select" class="inputSettings">
+            <option value="USD">USD - United States Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound Sterling</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+            <!-- Add more currency options as needed -->
+          </select>
+        </div>
+
+        
+
+        <div class="settings-b">
+          <button id="deletd" class="button-r">Reset</button>
+          <button id="created">Create Daily Goal</button>
+        </div>
+
+        <h4>*Salary divided by 30 equals Daily Goal <br>  <br> <br> <br> <br> <br><input type="button" name="logout" id="logout" value="Log Out"></h4>
+        
+        <p id="signUp"></p>
+        <p id="login"></p>
+        <p id="h1lo"></p>
+        <p id="hlo"></p>
+        <p id="h1si"></p>
+
+      </div>
+  </div>
+
+  <div class="container" id="container">  
+    
+  </div>
+  <script  src="client.js"></script> 
+
+</body>
+</html>
